@@ -77,6 +77,11 @@
       p.innerText = 'p filho da div2 que é filha da div1';
       div2.appendChild(p);
 
+      // 5. Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+      let divleft = document.createElement('div');
+      divleft.className = 'left-content';
+      div1.appendChild(divleft);
+
     </script>
   </body>
 </html>
