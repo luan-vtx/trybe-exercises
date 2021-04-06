@@ -64,6 +64,15 @@
         }
 
         correctH1Text();
+
+        function upperCaseP() {
+          let paragraphs = document.getElementsByTagName('p');
+          for(paragraph of paragraphs) {
+            paragraph.style.textTransform = 'uppercase';
+          }
+        }
+
+        upperCaseP();
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
