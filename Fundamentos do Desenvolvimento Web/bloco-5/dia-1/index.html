@@ -41,8 +41,8 @@
     <script>
         function changeTextOfP() {
           document.getElementsByTagName('p')[0].innerText = 'Como me vejo daqui a 2 anos:';
-          document.getElementsByTagName('p')[1].innerText = 'Trabalhando como um dev junior, conquistando minha independência financeira';
-          document.getElementsByTagName('p')[2].innerText = 'E ajudando minha família.';
+          document.getElementsByTagName('p')[1].innerText = 'Trabalhando como um dev junior, conquistando minha independência financeira e ajudando minha família.';
+          document.getElementsByTagName('p')[2].innerText = 'É noix que voa!';
         }
 
         changeTextOfP();
@@ -73,6 +73,15 @@
         }
 
         upperCaseP();
+
+        function consoleP() {
+          let paragraphs = document.getElementsByTagName('p');
+          for(paragraph of paragraphs) {
+            console.log(paragraph.innerText);
+          }
+        }
+
+        consoleP();
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
