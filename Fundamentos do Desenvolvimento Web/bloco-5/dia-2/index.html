@@ -122,8 +122,12 @@
       createdH1.className = 'title';
 
       // 2. Adicione a classe description nas 3 tags h3 criadas;
+      let myH3 = document.getElementsByTagName('h3');
+      for(let index = 0; index < tagsH3.length; index += 1) {
+        myH3[index].className = 'description';}
 
       // 3. Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+      
 
       // 4. Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
 
