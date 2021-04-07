@@ -106,6 +106,13 @@
         divright.appendChild(listItem);
       }
 
+      // 9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+        let tagsH3 = ['firstH3', 'secondH3', 'thirdH3'];
+        for(let index = 0; index < tagsH3.length; index += 1) {
+          let createdH3 = tagsH3[index];
+          createdH3 = document.createElement('h3');
+          div1.appendChild(createdH3);
+        }
 
     </script>
   </body>
