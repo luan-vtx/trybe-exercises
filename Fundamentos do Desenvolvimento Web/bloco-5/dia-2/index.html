@@ -105,7 +105,7 @@
         let numberName = ulItems[index];
         let listItem = document.createElement('li');
         listItem.innerText = numberName;
-        divright.appendChild(listItem);
+        list.appendChild(listItem);
       }
 
       // 9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
@@ -136,6 +136,9 @@
       div2.style.backgroundColor = 'green';
 
       // 6. Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+      for (let index = 0; index < 2; index += 1) { 
+        list.removeChild(list.lastElementChild);
+      }
 
     </script>
   </body>
