@@ -69,13 +69,28 @@ function createDaysOfTheWeek() {
 populateDecemberDays();
 
 // Exercício 2
-function createHolidays (string) {
+function createHolidaysButton (string) {
   const holidayButton = document.createElement('button');
   holidayButton.innerText = string;
-  holidayButton.classList.add('btn-holiday');
+  holidayButton.id = 'btn-holiday';
   
   const buttonsContainer = document.querySelector('.buttons-container');
   buttonsContainer.appendChild(holidayButton);
 }
 
-createHolidays('Feriados');
+createHolidaysButton('Feriados');
+
+// Exercício 3
+
+// Exercício 4
+function createFridayButton (string) {
+  const fridayButton = document.createElement('button');
+  fridayButton.innerText = string;
+  fridayButton.id = 'btn-friday';
+  
+  const buttonsContainer = document.querySelector('.buttons-container');
+  buttonsContainer.appendChild(fridayButton);
+}
+
+createFridayButton('Sexta-feira');
+
