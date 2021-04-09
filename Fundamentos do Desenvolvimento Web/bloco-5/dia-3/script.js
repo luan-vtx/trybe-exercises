@@ -112,3 +112,23 @@ function createFridayButton (string) {
 
 createFridayButton('Sexta-feira');
 
+// Exercício 5
+function modifyFriday() {
+  let fridayDays = document.querySelectorAll('.friday');
+  let fridayModifyButton = document.querySelector('#btn-friday');
+  let newText = 'SEXTOUUUU';
+  let dezFridays = [ 4, 11, 18, 25 ];
+
+  fridayModifyButton.addEventListener('click', function() {
+    for(let index = 0; index < fridayDays.length; index += 1) {
+      if(fridayDays[index].innerText !== newText) {
+        fridayDays[index].innerText = newText;
+      } else {
+        fridayDays[index].innerText = dezFridays[index];
+      }
+    }
+  })
+};
+
+modifyFriday();
+
