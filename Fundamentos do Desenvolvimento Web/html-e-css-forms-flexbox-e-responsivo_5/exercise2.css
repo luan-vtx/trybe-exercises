@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 15px 30px;
+}
+
+/* Tela pequena */
+@media screen and (max-width: 600px) {
+  h1, h2, h3 {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  p {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+
+  li {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+}
+
+/* Tela média */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  h1, h2, h3 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: xx-large;
+  }
+
+  p {
+    padding: 15px 30px;
+    font-size: 30px;
+  }
+  
+  li {
+    padding: 0 10px;
+    font-size: 25px;
+  }
+}
+
+/* Tela grande */
+@media screen and (min-width: 800px) {
+  h1 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 50px;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 40px;
+  }
+
+  h3 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+
+  p {
+    padding: 15px 30px;
+    font-size: 30px;
+  }
+  
+  li {
+    padding: 0 10px;
+    font-size: 30px;
+  }  
+  
+  .aside-container {
+    display: flex;
+  }
+
+  .aside-container aside {
+    width: 50%;
+    height: 100%;
+  }
+}
