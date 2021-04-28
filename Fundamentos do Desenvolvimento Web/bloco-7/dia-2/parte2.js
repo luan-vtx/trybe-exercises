@@ -48,3 +48,9 @@ const listValues = (object) => Object.values(object);
 console.log(listValues(lesson1));
 console.log('\n====================================================\n');
 
+// 5. Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 . Ao executar o comando console.log(allLessons)
+
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+
+console.log(allLessons);
+console.log('\n====================================================\n');
