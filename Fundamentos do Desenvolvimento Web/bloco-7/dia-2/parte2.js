@@ -25,9 +25,18 @@ const addLesson = (object, key, value) =>  object[key] = value;
 addLesson(lesson2, 'turno', 'manhã');
 
 console.log(lesson2);
+console.log('\n====================================================\n');
 
 // 2. Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
 const listKeys = (object) => Object.keys(object);
 
 console.log(listKeys(lesson3));
+console.log('\n====================================================\n');
+
+// 3. Crie uma função para mostrar o tamanho de um objeto.
+
+const objectLength = (object) => Object.keys(object).length;
+
+console.log(objectLength(lesson2));
+console.log('\n====================================================\n');
