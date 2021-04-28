@@ -25,3 +25,9 @@ const addLesson = (object, key, value) =>  object[key] = value;
 addLesson(lesson2, 'turno', 'manhã');
 
 console.log(lesson2);
+
+// 2. Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+
+const listKeys = (object) => Object.keys(object);
+
+console.log(listKeys(lesson3));
